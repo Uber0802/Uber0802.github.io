@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel (Po-Yi) Wu</title>
+  <meta name="description" content="Daniel Po-Yi Wu — robot learning researcher working on reinforcement learning, vision-language-action models, and world models for manipulation.">
+  <meta property="og:title" content="Daniel Po-Yi Wu">
+  <meta property="og:description" content="Robot learning researcher: reinforcement learning, vision-language-action models, and world models for manipulation.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">Daniel Po-Yi Wu</a>
+    <nav aria-label="Sections">
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="assets/cv.pdf">CV</a>
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- ============ INTRO ============ -->
+  <section class="intro">
+    <div class="intro-text">
+      <h1>Daniel (Po-Yi) Wu</h1>
+      <p class="tagline">Robot learning · Reinforcement learning · World models</p>
+
+      <p>
+        I am a visiting researcher at the University of Washington, collaborating with
+        <a href="https://www.jessezhang.net">Jesse Zhang</a> in <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>'s group
+        (<a href="https://rse-lab.cs.washington.edu/">RSE Lab</a>), and a student researcher in robotics at the
+        <a href="https://allenai.org/">Allen Institute for AI (Ai2)</a>.
+      </p>
+      <p>
+        I received my B.S. in Computer Science and Information Engineering from
+        National Taiwan University in 2026, where I
+        worked with <a href="https://twke18.github.io">Tsung-Wei Ke</a> in the <a href="https://embodiedai-ntu.github.io">Embodied AI Lab</a>.
+      </p>
+      <p>
+        My research focuses on enabling robots to <strong>learn and adapt automatically in the real world</strong>.
+        Toward this goal, I work on reinforcement learning, world models,
+        learning from touch, and scalable simulation benchmarks.
+      </p>
+
+      <ul class="links">
+        <li><a href="mailto:danielwu0802@gmail.com">Email</a></li>
+        <li><a href="assets/cv.pdf">CV</a></li>
+        <li><a href="https://scholar.google.com/citations?user=QnDXaNgAAAAJ">Google Scholar</a></li>
+        <!-- Add when ready:
+        <li><a href="https://x.com/XXXX">X / Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/XXXX">LinkedIn</a></li>
+        -->
+      </ul>
+    </div>
+
+    <!-- Drop a square photo at assets/profile.jpg and it replaces the initials. -->
+    <div class="portrait" data-label="DW">
+      <img src="assets/profile.jpg" alt="Portrait of Daniel Po-Yi Wu" onerror="this.remove()">
+    </div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><time>Nov 2026</time><span>New preprint: <a href="https://arxiv.org/abs/2611.05080">CRONOS</a>, a benchmark for non-episodic reinforcement learning in robotic manipulation.</span></li>
+      <li><time>Sep 2026</time><span>New preprint: <a href="https://arxiv.org/abs/2609.36785">TaRL</a>, learning general and physical rewards from tactile demonstrations.</span></li>
+      <li><time>Jul 2026</time><span>Joined the UW RSE Lab as a visiting researcher and the Allen Institute for AI as a student researcher.</span></li>
+      <li><time>Jun 2026</time><span>Graduated from National Taiwan University with a B.S. in Computer Science and Information Engineering.</span></li>
+      <li><time>2025</time><span>First place at the NTU CSIE Undergraduate Capstone Project Exhibition.</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section id="research">
+    <h2>Research</h2>
+    <p class="section-note">I publish as <strong>Po-Yi Wu</strong>. <sup>*</sup> equal contribution, <sup>†</sup> corresponding author.</p>
+
+    <!-- For each paper: drop an image at the path in <img src> to replace the placeholder tile. -->
+    <article class="paper">
+      <div class="thumb t1" data-label="CRONOS">
+        <img src="assets/cronos.jpg" alt="" onerror="this.remove()">
+      </div>
+      <div class="paper-body">
+        <h3><a href="https://embodiedai-ntu.github.io/cronos/index.html">CRONOS: Benchmarking Non-Episodic Reinforcement Learning for Robotic Manipulation</a></h3>
+        <p class="authors"><strong>Po-Yi Wu</strong><sup>*</sup>, Djengo Cyun-Jyun Fang<sup>*†</sup>, Dian Cheng, Tsung-Wei Ke</p>
+        <p class="venue"><em>Preprint</em>, 2026 · under review</p>
+        <p class="paper-links"><a href="https://embodiedai-ntu.github.io/cronos/index.html">Project page</a> <a href="https://arxiv.org/abs/2611.05080">arXiv</a></p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="thumb t2" data-label="TaRL">
+        <img src="assets/tarl.jpg" alt="" onerror="this.remove()">
+      </div>
+      <div class="paper-body">
+        <h3><a href="https://embodiedai-ntu.github.io/tarl/index.html">TaRL: Learning General and Physical Rewards from Tactile Demonstrations</a></h3>
+        <p class="authors"><strong>Po-Yi Wu</strong>, Dao-Jan Chang, Yu-Cheng Su, Hong-Ming Chen, Shang-Ya Siao, Tsung-Wei Ke</p>
+        <p class="venue"><em>Preprint</em>, 2026 · under review</p>
+        <p class="paper-links"><a href="https://embodiedai-ntu.github.io/tarl/index.html">Project page</a> <a href="https://arxiv.org/abs/2609.36785">arXiv</a></p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="thumb t3" data-label="DELPHI">
+        <img src="assets/delphi.jpg" alt="" onerror="this.remove()">
+      </div>
+      <div class="paper-body">
+        <h3><a href="https://alexpeng517.github.io/DELPHI/">Beyond the Visible: Learning Dense 4D Motion in Contact-Rich Deformable Worlds</a></h3>
+        <p class="authors">Li-Xuan Peng, <strong>Po-Yi Wu</strong>, Yu-Tsen Tsai, Min Sun, Tsung-Wei Ke</p>
+        <p class="venue"><em>Preprint</em>, 2026 · under review</p>
+        <p class="paper-links"><a href="https://alexpeng517.github.io/DELPHI/">Project page</a></p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="thumb t4" data-label="SMOT">
+        <img src="assets/smot.jpg" alt="" onerror="this.remove()">
+      </div>
+      <div class="paper-body">
+        <h3><a href="https://ieeexplore.ieee.org/document/11175122">Boosting Small Object Tracking via Collaborative Detection Transformer</a></h3>
+        <p class="authors">B.-C. Chuang, J.-H. Lee, P.-T. Kuo, …, <strong>Po-Yi Wu</strong>, …, C.-Y. Lee, Y.-F. Yang</p>
+        <p class="venue"><em>IAPR International Conference on Machine Vision Applications (MVA)</em>, 2025</p>
+        <p class="paper-links"><a href="https://ieeexplore.ieee.org/document/11175122">IEEE</a> <span class="badge">3rd place, SMOT4SB Challenge</span></p>
+      </div>
+    </article>
+
+    <h2 class="sub">Selected projects</h2>
+
+    <article class="paper">
+      <div class="thumb t1" data-label="Split Decisions">
+        <img src="assets/splitdecisions.jpg" alt="Split Decisions teaser figure" onerror="this.remove()">
+      </div>
+      <div class="paper-body">
+        <h3>Split Decisions: Structured Demonstration via Vision-Language Planning and Action Control</h3>
+        <p class="venue">Pairs VLM-based high-level planning with VLA-based low-level control to improve sample efficiency during post-training.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="thumb t2" data-label="Correct First">
+        <img src="assets/correctfirst.jpg" alt="Correct First, Fast Second pipeline figure" onerror="this.remove()">
+      </div>
+      <div class="paper-body">
+        <h3><a href="https://arxiv.org/html/2611.12079v1">Correct First, Fast Second: What a Local 7B Code Model Can and Cannot Do for GPU Kernel Optimization</a></h3>
+        <p class="venue">An investigation paper on the limits of a small, locally run code model for GPU kernel optimization.</p>
+        <p class="paper-links"><a href="https://arxiv.org/html/2611.12079v1">arXiv</a></p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <div class="when">Aug 2026 – Present</div>
+        <div class="what">
+          <h3>Student Researcher, Robotics · Allen Institute for AI (Ai2)</h3>
+          <p>Seattle, WA. Learning physics in world models.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jul 2026 – Present</div>
+        <div class="what">
+          <h3>Visiting Researcher · University of Washington, RSE Lab</h3>
+          <p>Seattle, WA. Advised by Dieter Fox and Jesse Zhang.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Apr 2026 – Jun 2026</div>
+        <div class="what">
+          <h3>Robotics R&amp;D Intern · Shennongshi</h3>
+          <p>Taipei, Taiwan. Built a dual-arm manipulation system in Isaac Sim for contact-rich cooking tasks and transferred the learned stir-frying policy to a physical UR10e; trained manipulation policies on real robots and stabilized the deployment pipeline.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Aug 2024 – Jun 2026</div>
+        <div class="what">
+          <h3>Undergraduate Researcher · Embodied AI Lab, National Taiwan University</h3>
+          <p>Taipei, Taiwan. Advised by Tsung-Wei Ke. Reinforcement learning and vision-language-action models for robot manipulation.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jul 2024 – Sep 2024</div>
+        <div class="what">
+          <h3>iOS Software Engineer Intern · Aidmics</h3>
+          <p>Taipei, Taiwan. Developed and optimized key features of the iSperm iOS app in Swift.</p>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="sub">Education</h2>
+    <ul class="timeline">
+      <li>
+        <div class="when">Sep 2022 – Jun 2026</div>
+        <div class="what">
+          <h3>National Taiwan University</h3>
+          <p>B.S. in Computer Science and Information Engineering. GPA 3.91 / 4.0.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ AWARDS ============ -->
+  <section id="awards">
+    <h2>Awards &amp; honors</h2>
+    <ul class="news">
+      <li><time>2025</time><span><strong>First Place</strong>, Undergraduate Capstone Project Exhibition, NTU CSIE</span></li>
+      <li><time>2025</time><span><strong>Dean's List Award</strong>, National Taiwan University</span></li>
+      <li><time>2025</time><span><strong>Third Place</strong>, Small Multi-Object Tracking for Spotting Birds Challenge, MVA 2025</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>© <span id="year">2026</span> Daniel Po-Yi Wu · <a href="mailto:danielwu0802@gmail.com">danielwu0802@gmail.com</a></p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var current = root.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
+</body>
+</html>
